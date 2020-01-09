@@ -6,7 +6,7 @@ header a {
   text-decoration: none;
   color: white;
 }
-header p {
+.flex-container1 p {
 	margin: 0;
 	padding: 0;
 	text-align: right;
@@ -14,6 +14,20 @@ header p {
 header h1 {
 	margin: 0;
 	padding: 0;
+}
+.dropdown-content {
+	display: none;
+	font-weight: normal;
+	position: absolute;
+	text-indent: 3px;
+	margin-left: -2px;
+	padding-right: 5vmin;
+	background-color: grey;
+  	z-index: 1;
+}
+.dropdown-content a:hover {
+	background-color: #000000;
+	color: #f1f1f1;
 }
 .flex-container1 {
 	display: inline-flex;
@@ -55,6 +69,15 @@ header h1 {
 	margin-right: 10vmin;
 	font-weight: bold;
 	font-size: 3vmin;
+}
+.flex-container2 > div:hover {
+	background-color: red;
+}
+#services:hover .dropdown-content {
+	display: block;
+}
+#about:hover .dropdown-content {
+	display: block;
 }
 .showcase {
 	position: relative;
