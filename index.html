@@ -10,28 +10,40 @@
 	<section>
 		<header>
 			<div >
-				<ul class="grid-container">
-					<li id="grid-logo"><div><img src="pirate.png"></div></li>
-					<li id="grid-title"><div><h1>Captain Rickets</h1></div></li>
-					<li id="grid-caption"><div><p>"So deadly, he's literally dead." - Abraham Lincoln</p></div></li>
+				<ul class="flex-container1">
+					<li id="flex-logo"><div><img src="pirate.png"></div></li>
+					<li id="flex-title"><div><h1>Captain</h1><h1>Rickets</h1></div></li>
+					<li id="flex-caption"><div><p>"So deadly, he's literally dead."</p><p>- Abraham Lincoln</p></div></li>
 				</ul>
 			</div>
 			<div>
-				<nav class="flex-container">
+				<nav class="flex-container2">
 					<div><a href="index.html">Home</a></div>
 					<div><a href="services.html">Services</a></div>
 					<div><a href="about.html">About</a></div>
-					<div><a href="crew.html">Crew</a></div>
+					<div><a href="blog.html">Blog</a></div>
 				</nav>
 			</div>
-			<hr>
 		</header>
 	</section>
-	<section>
-		
+	<div class="grid-container">
+	<section class="grid-item">
+		<div class="showcase">
+			<div><img src="ships.jpg">
+				<button class="button">Subscribe</button>
+			</div>
+			<div id="box"></div>
+			<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. </p></div>
+		</div>
 	</section>
-	<footer>
-		<div>Icons made by <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-	</footer>
+	<aside class="grid-item">
+		<div class="searchbox">
+			<div id="grid-box">Search:</div>
+			<div><input type="search" name="search">
+				<input type="submit" name="submit" value="asdf"></div>
+		</div>
+	</aside>
+	</div>
 </body>
 </html>
