@@ -46,6 +46,9 @@ header h1 {
 #flex-logo {
 	margin: 10px;
 }
+#flex-logo:hover {
+	cursor: pointer;
+}
 #flex-title {
 	font-size: 2.5vmin;
 	margin-right: 10vw;
@@ -79,20 +82,21 @@ header h1 {
 	display: block;
 }
 .showcase {
+	margin: 10px 0 0 10px;
 	position: relative;
 	width: 100%;
 	max-width: 700px;
 	justify-content: left;
 }
 .showcase img {
-	border-bottom-right-radius: 15px;
+	border-radius: 5px;
 	max-width: 100%;
 	max-height: auto;
 	z-index: -1;
 }
 .showcase button {
 	border-style: hidden;
-	border-radius: 15px;
+	border-radius: 5px;
 	font-size: 2vmin;
 	font-weight: bold;
 	position: absolute;
@@ -106,12 +110,13 @@ header h1 {
 	z-index: 2;
 }
 .showcase button:hover {
+	cursor: pointer;
 	background-color: red;
-	color: black;
+	color: white;
 }
 .showcase #box {
 	position: absolute;
-	border-bottom-right-radius: 15px;
+	border-radius: 5px;
 	bottom: 1%;
 	right: 0%;
 	transform: translate(-0%, -0%);
@@ -141,22 +146,84 @@ header h1 {
 	grid-template-rows: auto auto auto auto;
 	grid-column-gap: 10px;
 }
-.grid-item aside {
+.aside-grid-item {
 	grid-column: 2;
 
 }
 .searchbox {
-	margin-top: 10px;
+	margin: 10px 0 0 10px;
 }
-#grid-box {
-	text-indent: 4px;
+#aside-grid-box {
+	text-indent: 6px;
+	font-size: 2.8vmin;
+	font-weight: bold;
 	color: #f1f1f1;
-	width: 25vmin;
-	height: 20px;
+	width: 20vmin;
+	line-height: 4vh;
 	background-color: #000000;
-	opacity: .8;
 }
 .searchbox input {
+	margin-top: 5px;
+	width: 20vmin;
+	border-style: solid;
+	border-color: black;
+	border-width: .3px;
+	border-radius: 2px;
+	padding: 3px;
+}
+#submit {
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 2px;
+	background-color: white;
+}
+#submit:hover {
+	cursor: pointer;
+	color: white;
+	background-color: red;
+}
+.display-grid-container {
+	display: grid;
+	grid-column-gap: 15px;
+	grid-row-gap: 5px;
+	margin-top: 20px;
+	margin-left: 10px;
+	justify-content: space-between;
+	align-content: center;
+}
+#grid-item1 {
+	grid-column: 1;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	align-items: center;
+	text-align: center;
+}
+#grid-item2 {
+	grid-column: 2;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	align-items: center;
+	text-align: center;
+}
+#grid-item3 {
+	grid-column: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	align-items: center;
+	text-align: center;
+}
+.display-grid-container img {
+	width: 20vw;
+	height: auto;
+	max-width: 96px;
+	max-height: 96px;
+}
+.display-grid-container h1 {
+	font-weight: bold;
+	font-size: 5vmin;
+	margin-bottom: 0;
+}
+.display-grid-container p {
 	margin-top: 2px;
-	width: 25vmin;
+	font-size: 3vmin;
 }
