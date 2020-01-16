@@ -224,6 +224,7 @@
 }
 .support p {
 	font-size: 2vmin;
+	margin-bottom: 5px;
 }
 .support .name p {
 	margin: 0;
