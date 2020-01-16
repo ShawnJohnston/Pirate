@@ -2,6 +2,7 @@
 	margin: 0;
 }
 .header ul {
+	margin-bottom: 0;
 	padding: 0;
 }
 .header .flex-container1 {
@@ -80,23 +81,28 @@
 	background-color: #555555;
 }
 .flex-container2 .searchbox {
-	margin-right: 10px;
+	margin-right: 5px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
 	font-size: 3vmin;
 }
-.searchbox p {
-	color: #f1f1f1;
-	margin-right: 5px;
-}
 .searchbox #search {
+	margin-right: 5px;
 	padding: 3px;
-	width: 10vw;
+	width: 15vw;
+	height: 3.5vh;
 }
 .searchbox #submit {
+	border-style: none;
+	background-color: #f1f1f1;
 	padding: 3px;
+}
+.searchbox #submit:hover {
+	cursor: pointer;
+	background-color: red;
+	color: #f1f1f1;
 }
 .showcase {
 	margin: 10px auto auto auto;
@@ -224,7 +230,7 @@
 }
 .support p {
 	font-size: 2vmin;
-	margin-bottom: 5px;
+	margin: 5px 0 5px 0;
 }
 .support .name p {
 	margin: 0;
