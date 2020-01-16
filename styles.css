@@ -205,3 +205,28 @@
 	margin-top: 2px;
 	font-size: 3vmin;
 }
+.support .flex-container {
+	margin: 0 5px 5px 0;
+	padding: 0;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	right: 0;
+	bottom: 0;
+}
+.support img {
+	height: 10vmin;
+	width: 10vmin;
+	max-width: 100px;
+	max-height: 100px;
+}
+.support p {
+	font-size: 2vmin;
+}
+.support .name p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
